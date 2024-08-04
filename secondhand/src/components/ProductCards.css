@@ -1,0 +1,66 @@
+.card {
+    position: relative;
+    border: 1px solid #b4867e;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .card h2 {
+    font-size: 1.5em;
+    margin: 0;
+    font-family: garamond;
+  }
+  
+  .card p {
+    font-size: 1.2em;
+    margin: 8px 0;
+    font-family: garamond;
+  }
+  
+  .expand-button {
+    margin-top: 8px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: rgb(245, 220, 220);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: garamond;
+  }
+
+  .expand-button:hover {
+    background-color: #b4867e; /* Darker shade on hover */
+    color: white;
+  }
+  
+  
+  .sold-watermark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(61, 25, 25, 0.6);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+    border-radius: 8px;
+    z-index: 10;
+  }
+  
+  .card-details {
+    margin-top: 16px;
+  }
+  

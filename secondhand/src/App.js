@@ -14,12 +14,19 @@ export default function App() {
     setShowForm(false);
   };
 
+
   return (
     <div className="App">
       <header className="App-header">
         <h1>
-          Jia Yi's 2nd Hand Items
+          Jia Yi's Pre-Loved Items
         </h1>
+        <h2>
+          DM my telegram @jiajia_999999999 if you are interested in buying!
+        </h2>
+        <h2>
+          Location: Preferably Raffles Hall
+        </h2>
         </header>
         <div>
           <ProductCards/>
