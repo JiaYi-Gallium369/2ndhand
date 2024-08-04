@@ -1,6 +1,7 @@
 import './App.css';
 import { useState } from 'react';
 import AddProductForm from './components/AddProductForm';
+import ProductCards from './components/ProductCards';
 
 export default function App() {
   const [showForm, setShowForm] = useState(false);
@@ -16,18 +17,13 @@ export default function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          2nd Hand Items
-        </p>
+        <h1>
+          Jia Yi's 2nd Hand Items
+        </h1>
+        </header>
         <div>
-        {!showForm && (
-          <button onClick={handleAddProductClick}>Add Product</button>
-        )}
-        {showForm && (
-          <AddProductForm onClose={handleCloseForm} />
-        )}
+          <ProductCards/>
+          </div>
       </div>
-      </header>
-    </div>
   );
 }
