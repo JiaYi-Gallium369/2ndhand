@@ -1,10 +1,15 @@
 h1 {
+  background: linear-gradient(to right, #dfcbc8, #c0b3a9);
   font-family: garamond;
+  color: #1d1d1d;
+  text-align: center;
 }
 h2 {
   font-size: 20px;
   font-weight: 500;
   font-family: garamond;
+  color: #333;
+  text-align: center;
 }
 
 .product-cards {
@@ -12,16 +17,19 @@ h2 {
   flex-wrap: wrap;
   gap: 16px;
   transition: 0.3s;
+  align-content: center;
+  margin-left: 5%;
 }
 
 .card {
   border: 1px solid #ddd;
+  background-color: #fffaf8;
   border-radius: 8px;
   overflow: hidden;
   width: 200px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  transition: 0.3s;
+  transition: max-height 0.3s;
 }
 
 .card img {
