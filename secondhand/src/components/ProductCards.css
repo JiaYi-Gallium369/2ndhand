@@ -1,41 +1,62 @@
 .card {
     position: relative;
-    border: 1px solid #b4867e;
-    border-radius: 8px;
-    padding: 16px;
-    margin: 16px;
+    border: 1px solid #7e6561;
+    background-color: #fffaf8;
+    border-radius: 20px;
+    width: 200px;
+    padding: 20px;
+    margin: auto;
     overflow: hidden;
-    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 300px;
+    transition: height 0.3s ease-in-out;
+    font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+  }
+
+  .card.expanded {
+    height: 400px;
+    transition: height 0.3s ease-in-out;
   }
   
   .card img {
     max-width: 100%;
-    height: auto;
-    border-radius: 4px;
+    height: 150px;
+    border-radius: 20px;
+    object-fit: cover;
+    opacity: 0.85;
+    transition: height 0.2s ease-in-out, opacity 0.2s;
+  }
+
+  .card:hover img {
+    height: 180px;
+    border-radius: 2px;
+    opacity: 1;
   }
   
   .card h2 {
     font-size: 1.5em;
     margin: 0;
-    font-family: garamond;
+    font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", serif;
     font-weight: 600;
   }
   
   .card p {
     font-size: 1.2em;
     margin: 8px 0;
-    font-family: garamond;
+    font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", serif;
   }
   
   .expand-button {
     margin-top: 8px;
+    margin-bottom: 10px;
     padding: 8px 16px;
     border: none;
     border-radius: 15px;
     cursor: pointer;
     background-color: rgb(245, 220, 220);
     transition: background-color 0.3s ease, color 0.3s ease;
-    font-family: garamond;
+    font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", serif;
   }
 
   .expand-button:hover {
@@ -59,10 +80,12 @@
     font-weight: bold;
     border-radius: 8px;
     z-index: 10;
-    font-family: garamond;
+    font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", serif;
   }
   
   .card-details {
     margin-top: 16px;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
   }
   

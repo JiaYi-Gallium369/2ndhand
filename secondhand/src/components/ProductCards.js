@@ -15,7 +15,9 @@ const ProductCard = ({product, expandedCardId, setExpandedCardId}) => {
   };
 
   return (
-    <div key={product.id} className="card">
+    <div key={product.id} 
+    className={`card ${isExpanded ? 'expanded' : ''}`}
+      >
           <img src={product.imageUrl} alt={product.name} />
           <h2>{product.name}</h2>
           <p>Price: ${product.price}</p>
