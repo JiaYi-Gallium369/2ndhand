@@ -16,7 +16,6 @@
 
   .card.expanded {
     height: 400px;
-    transition: height 0.3s ease-in-out;
   }
   
   .card img {
@@ -42,7 +41,7 @@
   }
   
   .card p {
-    font-size: 1.2em;
+    font-size: auto;
     margin: 8px 0;
     font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", serif;
   }
@@ -86,6 +85,6 @@
   .card-details {
     margin-top: 16px;
     overflow: hidden;
-    transition: height 0.3s ease-in-out;
+    height: fit-content;
   }
   
